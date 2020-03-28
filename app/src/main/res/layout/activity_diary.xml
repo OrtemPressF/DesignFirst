@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Diary">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/diaryshape"
+        android:paddingStart="20sp"
+        android:text="DIARY"
+        android:textColor="@color/justblack"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonschedule"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="296dp"
+        android:drawableBottom="@drawable/ic_border_color_black_edit"
+        android:background="@drawable/fuckshape"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/buttondown"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:drawableBottom="@drawable/ic_expand_more_black_downbutton"
+        android:paddingTop="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/notediary"
+        android:background="@color/nocolor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:text="And I say heeeeeeeeeeeeeeeeeey  heeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeey"
+        android:id="@+id/notediary"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:background="@drawable/strokeblack"
+        android:maxLines="2"
+        android:textSize="20dp"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:layout_width="370dp"
+        android:layout_height="530dp"
+        android:background="@drawable/strokeblack"
+        app:layout_constraintBottom_toTopOf="@+id/buttondown"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
